@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>OnCampus NTNU Gjøvik</title>
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/blog-post.css" rel="stylesheet">
+    <!-- Magnific Popup core CSS file -->
+    <link rel="stylesheet" href="vendor/Magnific-Popup-master/dist/magnific-popup.css">
+    <!-- Open Sans -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+    <style>
+        #button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    }
+.white-popup {
+  position: relative;
+  background: #FFF;
+  padding: 40px;
+  width: auto;
+  max-width: 500px;
+  margin: 20px auto;
+  text-align: center;
+}
+button.mfp-close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+label {
+    color: #b9acac!important;
+}
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#" style="font-size: 1.8rem;font-family:'Open Sans', sans-serif;"><img src="logo_ntnu_1.png" alt="" style="height: 25px;"> OnCampus </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#">News
+                
+              </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Your Channel</a>
+                        <span class="sr-only">(current)</span>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Log out</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Header - set the background image for the header in the line below -->
+    <header class="py-5 bg-image-full" style="background-image: url('newsletter.jpg');">
+        <img class="img-fluid d-block mx-auto" src="small_logo.png" alt="">
+    </header>
+        <!-- Content section -->
+        <section class="py-5">
+            <div class="container">
+                <h1>We are sad that you are leaving us...</h1>
+                <br>
+                <br>
+                <h4>
+          Why do you want to leave us?</a></h4>
+                <input type="radio" name="answer1" value="value1"> I'm not interested<br>
+                <input type="radio" name="answer1" value="value2"> I don't want daily news<br>
+                <input type="radio" name="answer1" value="value3"> Remind me later<br>
+                <br>
+                <button class="btn btn-secondary" type="button" data-toggle="collapse" data-mfp-src="#small-dialog-fed" id="open-popup">Send</button>
+                <br>
+                <br>
+                <br>
+                <p class="mb-0" id="question1">You really want unsubscribe?</p>
+                <input type="checkbox" checked name="answer2" value="value1"> Do not uncheck this box if you want to stay subscribed<br>
+                <input type="checkbox" name="answer2" value="value2"> <label for="checkbox">I want NTNU OnCampus to delete all my data </label><br>
+                <br>
+                <button class="btn btn-secondary" type="button" onClick="window.location='unsubscribe-succ.html';">Save</button>
+            </div>
+        </section>
+        <!-- Image Section - set the background image for the header in the line below >
+    <section class="py-5 bg-image-full" style="background-image: url('https://unsplash.it/1900/1080?image=1081');">
+      <div style="height: 200px;"></div>
+    </section>
+    <section class="py-5">
+      <div class="container">
+        <h1>Section Heading</h1>
+        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, suscipit, rerum quos facilis repellat architecto commodi officia atque nemo facere eum non illo voluptatem quae delectus odit vel itaque amet.</p>
+      </div>
+    </section-->
+        <!-- Footer -->
+        <footer class="py-5 bg-dark">
+            <div class="container">
+                <p class="m-0 text-center text-white">Copyright &copy; NTNU Gjøvik 2018</p>
+            </div>
+            <!-- /.container -->
+        </footer>
+        <!-- Bootstrap core JavaScript -->
+        <script src="vendor/jquery/jquery.min.js"></script>
+        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <!-- Magnific Popup core JS file -->
+        <script src="vendor/Magnific-Popup-master/dist/jquery.magnific-popup.min.js"></script>
+        <script>
+        $('#open-popup').magnificPopup({
+            items: [
+
+                {
+                    src: $('<div class="white-popup">Thank you for your feedback.</div>'),
+                    type: 'inline'
+                },
+
+            ],
+        });
+        </script>
+</body>
+
+</html>
